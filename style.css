@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+}
+
+div[onclick] {
+  user-select: none;
+}
+
+.main-centered {
+  width: 70vh;
+  margin: auto;
+}
+
+#options {
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(177, 177, 177);
+  height: 12vh;
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+  display: flex;
+  border-radius: 2vh;
+  padding: 2vh;
+  justify-content: space-between;
+}
+
+#options #start {
+  font-size: 3.5vh;
+  background-color: #84c2c2;
+  width: 20vh;
+  text-align: center;
+  line-height: calc(8vh - 2px);
+  border-radius: 1vh;
+  font-weight: bold;
+  border: 1px solid #5bacac;
+}
+
+#options #start:hover {
+  background-color: #75bbbb;
+}
+
+#options #start:active {
+  background-color: #5bacac;
+}
+
+#options #match-id {
+  background-color: #f8b470;
+  border: 1px solid #cc945c;
+  width: 20vh;
+  text-align: center;
+  border-radius: 1vh;
+  font-size: 2.3vh;
+  padding: 1vh;
+}
+
+#options #match-id b {
+  color: red;
+}
+
+#options #count-down {
+  background-color: #be88a3;
+  border: 1px solid #a76787;
+  width: 20vh;
+  text-align: center;
+  border-radius: 1vh;
+  padding: 1vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#options #count-down h1 {
+  font-size: 2vh;
+  text-align: center;
+  margin-top: -6.1vh;
+}
+
+#options #count-down p {
+  font-size: 3vh;
+  text-align: center;
+}
+
+#options #count-down #loading-bar {
+  height: calc( 8vh - 4px );
+  margin: -1vh;
+}
+
+.countDown {
+  animation: countTime 170s linear 1;
+}
+
+#board {
+  background-color: maroon;
+  height: 70vh;
+  padding: 1vh;
+  border-radius: 2vh;
+}
+
+#board .row {
+  display: flex;
+}
+
+#board .letter {
+  width: 15vh;
+  height: 15vh;
+  margin: 1vh;
+  background-color: #E8DDD1;
+  background-image: url(letter.svg);
+  font-weight: bold;
+  font-size: 12vh;
+  line-height: 15vh;
+  text-align: center;
+  border-radius: 1vh;
+}
+
+#board .letter span {
+  font-size: 10vh;
+}
+
+#board .letter u {
+  text-decoration: none;
+}
+
+@keyframes countTime {
+  from {
+    border-right: 20vh solid #7acccc;
+  }
+  to {
+    border-right: 0 solid #7acccc;
+  }
+}

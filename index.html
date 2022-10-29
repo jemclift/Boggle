@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Boggle</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="updateTime()">
+    <div id="options" class="main-centered">
+      <div id="start" onclick="start()">START</div>
+      <div id="match-id">Match ID: <b>000000000</b></div>
+      <div id="count-down">
+        <div id="loading-bar"></div>
+        <h1>NEXT GAME IN</h1>
+        <p>--</p>
+      </div>
+    </div>
+    <div id="board" class="main-centered">
+      <div class="row" id="row1">
+        <div class="letter">B</div><div class="letter">O</div>
+        <div class="letter">G</div><div class="letter">G</div>
+      </div>
+      <div class="row" id="row2">
+        <div class="letter">L</div><div class="letter">E</div>
+        <div class="letter">M</div><div class="letter">A</div>
+      </div>
+      <div class="row" id="row3">
+        <div class="letter">D</div><div class="letter">E</div>
+        <div class="letter">B</div><div class="letter">Y</div>
+      </div>
+      <div class="row" id="row4">
+        <div class="letter">J</div><div class="letter">E</div>
+        <div class="letter">M</div><div class="letter"><span>Qu</span></div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
